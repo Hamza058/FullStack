@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        /* Javascript */
+        /*var template = '<h6>My first react app!</h6>';
+        document.getElementById("root").innerHTML = template;*/
+
+        /* JSX - Javascript XML = JS içindeki etiketleri birer obje gibi yamamızı saplıyor */
+        /* var template2 = <h1>My first react app!</h1>; */
+        var root = document.getElementById("root");
+
+        /* React */
+        var template = React.createElement(
+            'h1',
+            null,
+            'My first react app!'
+        );
+
+        /* React DOM */
+        ReactDOM.render(template, root);
+    </script>
+</body>
+
+</html>
